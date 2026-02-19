@@ -7,42 +7,46 @@
     <meta name="keywords" content="сон, отдых, спать, овечки, релаксация, хобби">
     <meta name="author" content="Вольпова А.А.">
     
+    <!-- Open Graph теги (для Facebook, VK, Telegram) -->
     <meta property="og:title" content="Мое хобби - спать">
     <meta property="og:description" content="Просто люблю поспать, считаю овечек и нашел свой способ идеально отдыхать">
-    <meta property="og:image" content="sleep1.png">
+    <meta property="og:image" content="https://alesyawolpowa-ux.github.io/sleep-hobby-/lab1/images/sleep1.jpg">
+    <meta property="og:url" content="https://alesyawolpowa-ux.github.io/sleep-hobby-/lab1/">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://sleep-hobby.example.com">
+    <meta property="og:site_name" content="Мое хобби - спать">
     
-    <meta name="twitter:card" content="Мяу">
-    <meta name="twitter:title" content="Люблю спать">
-    <meta name="twitter:description" content="Мое хобби - сон и подсчет овечек">
+    <!-- Twitter Cards теги -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Мое хобби - спать">
+    <meta name="twitter:description" content="Просто люблю поспать, считаю овечек и нашел свой способ идеально отдыхать">
+    <meta name="twitter:image" content="https://alesyawolpowa-ux.github.io/sleep-hobby-/lab1/images/sleep1.jpg">
     
     <title>Мое хобби - спать</title>
-    <link rel="stylesheet" href="hobby.css">
+    <link rel="stylesheet" href="lab1/hobby.css">
 </head>
 <body>
-    <header id="header" class="main-header">
+    <header id="header" class="main-header" title="Главный заголовок" lang="ru">
         <h1>Мое хобби - спать</h1>
         <nav>
             <ul>
-                <li><a href="#why">Почему спать?</a></li>
-                <li><a href="#sheep">Овечки</a></li>
-                <li><a href="#tips">Советы</a></li>
+                <li><a href="#why" accesskey="p" title="Перейти к разделу 'Почему спать?'">Почему спать?</a></li>
+                <li><a href="#sheep" accesskey="o" title="Перейти к разделу 'Овечки'">Овечки</a></li>
+                <li><a href="#tips" accesskey="s" title="Перейти к разделу 'Советы'">Советы</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="why">
+        <section id="why" class="content-section" data-number="1" tabindex="1">
             <h2>Почему я люблю спать</h2>
             <article>
                 <p>Просто люблю. Нравится лежать в кровати, укрываться одеялом и деградировать.</p>
-                <p>Лучшее время - <time>5:00</time>, когда все дела сделаны и можно расслабиться.</p>
+                <p>Лучшее время - <time datetime="05:00">5:00</time>, когда все дела сделаны и можно расслабиться.</p>
                 <p>Сплю примерно <strong>8-9 часов</strong> в сутки. Иногда и 52, если выходной.</p>
             </article>
         </section>
 
-        <section id="sheep">
+        <section id="sheep" class="content-section" data-number="2" tabindex="2">
             <h2>Про овечек</h2>
             <article>
                 <h3>Как я считаю овечек</h3>
@@ -57,7 +61,7 @@
             </article>
         </section>
 
-        <section id="tips">
+        <section id="tips" class="content-section" data-number="3" tabindex="3">
             <h2>Мои советы для хорошего сна</h2>
             
             <article>
@@ -80,19 +84,19 @@
                 </ol>
             </article>
 
-            <aside>
+            <aside class="tip" title="Полезный совет" data-info="лайфхак">
                 <h4>Лайфхак</h4>
                 <p>Если овечки не помогают, попробуйте считать барашков. Иногда работает.</p>
             </aside>
         </section>
     </main>
 
-    <footer>
+    <footer id="footer" class="main-footer" data-year="2026">
         <p>© 2026 Любитель поспать</p>
-        <address>Пишите, если знаете хорошие способы заснуть!Телеграмм: @wolpova</address>
+        <address title="Контактная информация">
+            Пишите, если знаете хорошие способы заснуть! Телеграмм: @wolpova
+        </address>
         <p><small>Эта страница создана в порыве пойти домой</small></p>
     </footer>
 </body>
-
 </html>
-
